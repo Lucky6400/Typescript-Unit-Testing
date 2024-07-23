@@ -1,4 +1,14 @@
-const a: number = 10;
-const b: number = 20;
+// arrow functions
+const printName: (name?: string) => void = (name: string) => console.log(name);
 
-console.log(parseInt(a.toString()));
+printName();
+
+// regular functions
+function getName(surname: string): string {
+    return "Lucky " + surname;
+}
+
+// variables
+const myName: string = "Test";
+const myNumber: number = 64;
+const truth: boolean = false;
