@@ -1,14 +1,24 @@
-// arrow functions
-const printName: (name?: string) => void = (name: string) => console.log(name);
+const arr: string[] = ["Name", "Email"];
 
-printName();
+const arr2: number[] = [1, 2, 3, 4];
 
-// regular functions
-function getName(surname: string): string {
-    return "Lucky " + surname;
+// union types
+const arr3: (number | string)[] = [1, "Name"];
+
+type MyObj1 = { name: string; }
+
+type MyObj2 = { email: string }
+
+// intersection types
+type ResultObj = MyObj1 & MyObj2;
+
+const myobj: ResultObj = {
+    name: "",
+    email: ""
 }
 
-// variables
-const myName: string = "Test";
-const myNumber: number = 64;
-const truth: boolean = false;
+const myPlayer: any = undefined;
+
+const myPlayer2: unknown = undefined;
+
+
