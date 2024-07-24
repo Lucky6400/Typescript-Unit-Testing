@@ -1,8 +1,15 @@
 {
   "compilerOptions": {
     "strictPropertyInitialization": false,
-    "target": "ES5",
+    "target": "ES6",
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
-  }
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "module": "CommonJS"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
 }
