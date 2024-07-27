@@ -21,3 +21,7 @@ export class Cricketer {
         return "Shot Played";
     }
 }
+
+export function printName() {
+    return new Promise((resolve, reject) => resolve("lucky"));
+}

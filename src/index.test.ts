@@ -1,4 +1,4 @@
-import { Cricketer, divide, mult, subtract, sum } from "."
+import { Cricketer, divide, mult, printName, subtract, sum } from "."
 
 let cricketer: Cricketer;
 
@@ -34,5 +34,20 @@ describe('testing the methods inside the classes', () => {
     })
 })
 
+describe('testing the asyncronous code', () => {
+
+    // without async and await
+    test('prints the name', () => {
+        printName().then(res => {
+            expect(res).toBe("lucky");
+        })
+    })
+
+    // with async and await
+    test('prints the name async/await', async () => {
+        const res = await printName();
+        expect(res).toBe("lucky")
+    })
+})
 
 afterAll(() => console.log("after each test")); // teardown
