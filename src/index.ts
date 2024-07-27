@@ -13,3 +13,11 @@ export function divide(a: number, b: number): number {
 export function mult(a: number, b: number): number {
     return a * b;
 }
+
+export class Cricketer {
+    constructor() { };
+
+    playShot(): string {
+        return "Shot Played";
+    }
+}
