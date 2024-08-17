@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly and matches the snapshot: Button with "Click me" label 1`] = `
+<DocumentFragment>
+  <button>
+    MyButton
+  </button>
+</DocumentFragment>
+`;
